@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <!--第四行码最关键，实现了主要的搜索视图功能-->
+    <!--最后一个标签的意思是总是显示在toolbar上面-->
+    <!--android:orderInCategory="80"这个是显示的权重，数值越大权重越小-->
+    <!--这个title可有可无，也不会改变searchview系统自带的小放大镜-->
+    <item
+        android:id="@+id/ab_search"
+        android:orderInCategory="80"
+        android:title="搜帖"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom"/>
+
+</menu>
